@@ -1,12 +1,12 @@
 #nav {
-        box-shadow: 0px 5px 5px #888888;
+        box-shadow: 0px 2px 1px rgba(136, 136, 136, 0.4);
         text-align: center;
         position: fixed;
         width: 100%;
     }
 
 nav ul {
-        background: rgba(72,79, 89, .6);
+        background: rgba(72, 79, 89, 0.94);
         box-shadow: 0px 0px 5px #888888;
         align-content: center;
         align-items: center;
@@ -54,5 +54,6 @@ body {
     }
 
 .content {
-        padding-top: 80px;
+    padding-top: 80px;
+    text-align: center;
     }
