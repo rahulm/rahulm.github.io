@@ -51,10 +51,23 @@ nav ul li a {
 
 body {
     font-family: 'Lato', sans-serif;
+    background: #E8E8E8;
 }
 
-.content {
+
+
+/*Main Content styles*/
+.mainContent {
     padding-top: 50px;
     text-align: center;
     background: #E8E8E8;
+}
+
+content {
+    line-height: 2;
+}
+
+content h1 {
+    color: #59a8ba;
+    font-size: 4vw;
 }
