@@ -1,10 +1,10 @@
 #nav {
-        box-shadow: 0px 2px 1px rgba(136, 136, 136, 0.4);
-        text-align: center;
-        position: fixed;
-        width: 100%;
+    box-shadow: 0px 2px 1px rgba(136, 136, 136, 0.4);
+    text-align: center;
+    position: fixed;
+    width: 100%;
     z-index: 100;
-    }
+}
 
 nav ul {
     background: rgba(72, 79, 89, 0.94);
@@ -26,13 +26,17 @@ nav ul {
 nav ul li {
     float:inherit;
     text-align: center;
-    padding: 8px 25px;
     display: inline-block;
     margin: 0px;
+    
+    
+    /*Font stuff*/
     font-size: 37;
-/*    font-size: 3.5vw;*/
+    font-size: 3.9vh;
     font-variant:small-caps;
     color: #f0ffff;
+    padding: 8px 25px;
+    padding: 0.85vh 25px;
 }
 
 nav ul li:hover:not(.active) {
@@ -62,6 +66,7 @@ html, body {
 /*Main Content styles*/
 .mainContent {
     padding-top: 50px;
+    padding-top: 5.5vh;
     text-align: center;
     background: #E8E8E8;
     background-color: #E8E8E8;
