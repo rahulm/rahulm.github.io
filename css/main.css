@@ -2,9 +2,11 @@
 * This is a neat little trick that turns on simple borders to easily see the template.
 * Note that this does add some extra border spacing that you might want to remove for the final template.
 */
-/* * { */
-  /* border: 1px solid red !important; */
-/* } */
+/*
+* {
+  border: 1px solid red !important;
+}
+*/
 
 /*
 * Adding flex support
