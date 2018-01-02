@@ -27,6 +27,14 @@ h1 {
   text-transform: uppercase;
 }
 
+h1 span {
+  display: inline-block;
+}
+
+h1 span:first-letter {
+  font-size:2rem;
+}
+
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -68,7 +76,8 @@ h4 {
 }
 
 .title {
-  background-color: rgb(255, 186, 73);
+  /* background-color: rgb(255, 186, 73); */
+  background-color: rgb(229, 234, 238);
   padding: 1rem;
 }
 
@@ -77,22 +86,25 @@ h4 {
   padding: 0.7rem;
 }
 
-.workexperience {
-  background-color: rgb(226, 133, 110);
-  padding: 0.7rem;
-}
-
-.projects {
-  background-color: rgb(143, 173, 136);
-  padding: 0.7rem;
-}
-
 .education {
   background-color: rgb(185, 200, 200);
   padding: 0.7rem;
 }
 
+.workexperience {
+  /* background-color: rgb(226, 133, 110); */
+  background-color: rgb(136, 162, 170);
+  padding: 0.7rem;
+}
+
+.projects {
+  /* background-color: rgb(143, 173, 136); */
+  background-color: rgb(185, 200, 200);
+  padding: 0.7rem;
+}
+
 .contactme {
-  background-color: rgb(238, 224, 203);
+  /* background-color: rgb(238, 224, 203); */
+  background-color: rgb(229, 234, 238);
   padding: 0.7rem;
 }
