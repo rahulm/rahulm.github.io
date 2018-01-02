@@ -1,0 +1,86 @@
+/*
+* This is a neat little trick that turns on simple borders to easily see the template.
+* Note that this does add some extra border spacing that you might want to remove for the final template.
+*/
+/* * { */
+  /* border: 1px solid red !important; */
+/* } */
+
+/*
+* Adding flex support
+*/
+* {
+  -webkit-box-sizing: border-box;
+  -mox-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding: 0px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding: 0px;
+  margin: 0px;
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 0px;
+  margin: 0px;
+}
+
+.inner {
+  max-width: 1024px;
+}
+
+.title {
+  background-color: rgb(255, 186, 73);
+  padding: 1rem;
+}
+
+.aboutme {
+  background-color: rgb(136, 162, 170);
+  padding: 0.7rem;
+}
+
+.workexperience {
+  background-color: rgb(226, 133, 110);
+  padding: 0.7rem;
+}
+
+.projects {
+  background-color: rgb(143, 173, 136);
+  padding: 0.7rem;
+}
+
+.education {
+  background-color: rgb(185, 200, 200);
+  padding: 0.7rem;
+}
+
+.contactme {
+  background-color: rgb(238, 224, 203);
+  padding: 0.7rem;
+}

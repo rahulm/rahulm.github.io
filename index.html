@@ -1,124 +1,341 @@
+<!DOCTYPE HTML>
 <html>
-    <head>
-        
-        <!--Title. TODO: update-->
-        <title>Rahul Malavalli</title>
-        
-        <!-- Icon -->
-        <link rel="shortcut icon" href="images/FacebookProfilePic2Icon.ico"/>
-        
-        <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
-        
-        <!-- Style Sheet styles.css -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <link rel="stylesheet" media="screen" href="css/style.css">
-        
-        <style>
-            .splashScreenWrapper {
-                z-index: 0;
-            }
-            #splashScreenBackground {
-                z-index: 0;
-                position: relative;
-                opacity: 1;
-            }
-            .splashScreenOverlayPicture {
-                box-shadow: 0px 0px 30px #888888;
-            }
-            #splashScreenOverlayText {
-                background: rgba(255, 255, 255, 0.21);
-                text-align: center;
-                color: #d1d1d1;
-                padding: 10;
-                letter-spacing: 2vw;
-                font-size: 5vw;
-                box-shadow: 0px 0px 30px #888888;
-                font-weight: 100;
-            }
-            
-            #splashScreenOverlay {
-                z-index: 5;
-                position: absolute;
-                width: 100%;
-                top: 100px;
-                left: 0%;
-            }
-            
-        </style>
-        
-    </head>
+  <head>
     
-    <body onload="setOverlayHeight()" onresize="setOverlayHeight()">
-        
-        <script>
-            function setOverlayHeight() {
-                var navHeight = document.getElementById("nav").offsetHeight;
-                var picHeight = document.getElementById("splashScreenBackground").offsetHeight;
-                var overlayHeight = navHeight + (0.15*picHeight);
-                document.getElementById("splashScreenOverlay").style.top=overlayHeight;
-//                document.getElementById("splashScreenOverlayText").innerHTML=navHeight;
-            }
-        </script>
-        
-        <!-- Floating Navigation Bar -->
-        <nav id="nav">
-            <ul>
-                <li class="active">
-                    <a href="index.html">Home</a>
-                </li>
-                
-                <li>
-                    <a href="projects.html">Projects</a>
-                </li>
-                
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            
-        </nav>
-        
-        
-        <!-- Rest of content -->
-        <div class="mainContent">
-            
-            <!-- Big Central welcome screen -->
-            <div class="splashScreenWrapper">
-                <div id="splashScreenBackground">
-                    <img src="images/San-Diego-Skyline-at-Night.jpg" width="100%"/>
-                </div>
-                
-                <span id="splashScreenOverlay">
-                    <img src="images/FacebookProfilePic2.jpg" style="border-radius:50%" width="26%" class="splashScreenOverlayPicture"/>
-                <br>
-                    <div style="height:6.4vw"></div>
-                    <br>
-                    <span id="splashScreenOverlayText">
-                        RAHUL MALAVALLI
-                    </span>                    
-                </span>
+    <title>Rahul Malavalli</title>
+    
+    <!-- bootstrap css -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
+    <!-- local bootstrap css -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <!-- To get the stylesheet that normalizes the CSS for all browsers, use this: -->
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+    
+    
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+    
+    
+    <!-- Custom styles css -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  
+  <!-- Cool placeholders: placehold.it or placepuppy.it or placekitten.com -->
+  <!-- Can use google.com/fonts for web fonts -->
+  <!-- use https://getbootstrap.com/docs/3.3/customize/ to customize and download the v3 boostrap -->
+  
+  <body>
+    
+    <div class="container-fluid text-center">
+      
+      <!-- title -->
+      <div class="row title">
+        <div class="col-md-12">
+          <h1>Rahul Malavalli</h1>
+        </div>
+      </div>
+      
+      
+      <!-- about me -->
+      <div class="row aboutme textcenter">
+        <!-- need a container-fluid to nest rows -->
+        <div class="container-fluid inner">
+          <div class="row pb-3">
+            <div class="col-12">
+              <h2>About Me</h2>
             </div>
-            
-            <!-- Space -->
-            <div style="height:3vw"></div>
-            
-            <content>
-                <h1>About Me</h1>
-                
-                <!-- Space -->
-                <div style="height:3vw"></div>
-                
-                <p style="font-size:2vw">My name is Rahul Malavalli, and I am an engineer pursuing Computer Science and Engineering at the University of California-Los Angleles.
-                <br><br>
-                I am passionate about using computer science in novel ways, and eager to continue exploring technology on not only the scholastic path, but also through personal endeavors, technical internships/jobs, research positions, and other opportunities.
-                <br><br>
-                To see some of my projects or to contact me, please click on the appropriate tab above!
-                </p>
-            </content>
-        
-            
+          </div>
+          
+          <div class="row pb-2">
+            <div class="col-12">
+              <h3>
+                I'm a Computer Science and Engineering Undergraduate at UCLA.
+              </h3>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-1 m-2">
+              <a href="https://www.linkedin.com/in/rahul-m/">
+              <img src="resources/images/In-Black-66px-R.png" alt="LinkedIn" width="35" height="auto"> <!-- class="img-fluid" -->
+              </a>
+            </div>
+            <div class="col-sm-1 m-1">
+              <a href="https://github.com/rahulm11">
+              <img src="resources/images/GitHub-Mark-64px.png" alt="Github" width="30" height="auto">
+              </a>
+            </div>
+            <div class="col-sm-5"></div>
+          </div>
+          
         </div>
         
-    </body>
+      </div>
+      
+      
+      <!-- work experience -->
+      <div class="row workexperience">
+        <!-- need a container-fluid to nest rows -->
+        <div class="container-fluid inner">
+          <div class="row pb-3">
+            <div class="col-md-12">
+              <h2>Work Experience</h2>
+            </div>
+          </div>
+          
+          <!-- first row of experience -->
+          <div class="row">
+          
+            <!-- template for experience box -->
+            <div class="col-sm-4 p-3">
+              
+              <!-- image -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <img src="resources/images/google_logo.png" alt="Google" width="80" height="auto"> <!-- class="img-fluid" -->
+                </div>
+              </div>
+              
+              <!-- location name -->
+              <div class="row pb-1">
+                <div class="col-sm-12">
+                  <h3><b>Google</b></h3>
+                </div>
+              </div>
+              
+              <!-- position -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <h3>Software Engineering Intern</h3>
+                </div>
+              </div>
+              
+              <!-- time period -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>June 2017 - September 2017</h4>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <!-- SARP lab -->
+            <div class="col-sm-4 p-3">
+              
+              <!-- image -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <img src="resources/images/ucla_health.png" alt="UCLA Health" width="80" height="auto"> <!-- class="img-fluid" -->
+                </div>
+              </div>
+              
+              <!-- location name -->
+              <div class="row pb-1">
+                <div class="col-sm-12">
+                  <h3><b>SARP Lab - UCLA Health</b></h3>
+                </div>
+              </div>
+              
+              <!-- position -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <h3>Undergrad CS Researcher</h3>
+                </div>
+              </div>
+              
+              <!-- time period -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>April 2016 - September 2016</h4>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+            <!-- PlayFull -->
+            <div class="col-sm-4 p-3">
+              
+              <!-- image -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <img src="resources/images/playfull.png" alt="PlayFull" width="80" height="auto"> <!-- class="img-fluid" -->
+                </div>
+              </div>
+              
+              <!-- location name -->
+              <div class="row pb-1">
+                <div class="col-sm-12">
+                  <h3><b>PlayFull</b></h3>
+                </div>
+              </div>
+              
+              <!-- position -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <h3>Lead Android Developer</h3>
+                </div>
+              </div>
+              
+              <!-- time period -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>October 2014 - September 2015</h4>
+                </div>
+              </div>
+            
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      
+      
+      <!-- projects -->
+      <div class="row projects">
+        <div class="container-fluid inner">
+          <div class="row pb-3">
+            <div class="col-md-12">
+              <h2>Some Projects</h2>
+            </div>
+          </div>
+          
+          
+          <!-- first row of projects -->
+          <div class="row">
+            
+            <!-- template for project box -->
+            <div class="col-sm-4 p-3">
+              
+              <!-- image -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <img src="resources/images/ucla_health.png" alt="UCLA Health" width="80" height="auto"> <!-- class="img-fluid" -->
+                </div>
+              </div>
+              
+              <!-- location name -->
+              <div class="row pb-1">
+                <div class="col-sm-12">
+                  <h3><b>FPGA Depth Perception</b></h3>
+                </div>
+              </div>
+              
+              <!-- position -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <h3>CS 152B Final Project</h3>
+                </div>
+              </div>
+              
+              <!-- time period -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>October 2017 - December 2017</h4>
+                </div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+          
+         </div>
+      </div>
+      
+      
+      <!-- education -->
+      <div class="row education">
+        <div class="container-fluid inner">
+          <div class="row pb-3">
+            <div class="col-md-12">
+              <h2>Education</h2>
+            </div>
+          </div>
+          
+          
+          <!-- Next row for education info -->
+          <div class="row">
+            
+            <!-- template for education box -->
+            <div class="col-sm-12 p-3">
+              
+              <!-- image -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <img src="resources/images/ucla_bruins_2004.png" alt="UCLA Bruins" width="80" height="auto"> <!-- class="img-fluid" -->
+                </div>
+              </div>
+              
+              <!-- location name -->
+              <div class="row pb-1">
+                <div class="col-sm-12">
+                  <h3>University of California, Los Angeles (UCLA)</h3>
+                </div>
+              </div>
+              
+              <!-- position -->
+              <div class="row pb-2">
+                <div class="col-sm-12">
+                  <h3>Computer Science and Engineering, B.S.</h3>
+                </div>
+              </div>
+              
+              <!-- time period -->
+              <div class="row">
+                <div class="col-sm-12">
+                  <h4>Expected Graduation: June 2018</h4>
+                </div>
+              </div>
+            
+            </div>
+            
+          </div>
+          
+          
+         </div>
+      </div>
+      
+      
+      <!-- contact me -->
+      <div class="row contactme">
+        <div class="container-fluid inner">
+          <div class="row pb-3">
+            <div class="col-md-12">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          
+          <div class="row pb-2">
+            <div class="col-12">
+              <h3>rahul.malavalli@gmail.com</h3>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
+      
+    </div>
+    
+    
+    <!-- local bootstrap js -->
+    <script src="bootstrap/js/bootstrap.min.js"><\/script>
+    
+    <!-- jquery and optional javascript libraries, decide if necessary -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> -->
+    
+  </body>
+  
 </html>

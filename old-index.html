@@ -1,0 +1,124 @@
+<html>
+    <head>
+        
+        <!--Title. TODO: update-->
+        <title>Rahul Malavalli</title>
+        
+        <!-- Icon -->
+        <link rel="shortcut icon" href="images/FacebookProfilePic2Icon.ico"/>
+        
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
+        
+        <!-- Style Sheet styles.css -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" media="screen" href="css/style.css">
+        
+        <style>
+            .splashScreenWrapper {
+                z-index: 0;
+            }
+            #splashScreenBackground {
+                z-index: 0;
+                position: relative;
+                opacity: 1;
+            }
+            .splashScreenOverlayPicture {
+                box-shadow: 0px 0px 30px #888888;
+            }
+            #splashScreenOverlayText {
+                background: rgba(255, 255, 255, 0.21);
+                text-align: center;
+                color: #d1d1d1;
+                padding: 10;
+                letter-spacing: 2vw;
+                font-size: 5vw;
+                box-shadow: 0px 0px 30px #888888;
+                font-weight: 100;
+            }
+            
+            #splashScreenOverlay {
+                z-index: 5;
+                position: absolute;
+                width: 100%;
+                top: 100px;
+                left: 0%;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body onload="setOverlayHeight()" onresize="setOverlayHeight()">
+        
+        <script>
+            function setOverlayHeight() {
+                var navHeight = document.getElementById("nav").offsetHeight;
+                var picHeight = document.getElementById("splashScreenBackground").offsetHeight;
+                var overlayHeight = navHeight + (0.15*picHeight);
+                document.getElementById("splashScreenOverlay").style.top=overlayHeight;
+//                document.getElementById("splashScreenOverlayText").innerHTML=navHeight;
+            }
+        </script>
+        
+        <!-- Floating Navigation Bar -->
+        <nav id="nav">
+            <ul>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            
+        </nav>
+        
+        
+        <!-- Rest of content -->
+        <div class="mainContent">
+            
+            <!-- Big Central welcome screen -->
+            <div class="splashScreenWrapper">
+                <div id="splashScreenBackground">
+                    <img src="images/San-Diego-Skyline-at-Night.jpg" width="100%"/>
+                </div>
+                
+                <span id="splashScreenOverlay">
+                    <img src="images/FacebookProfilePic2.jpg" style="border-radius:50%" width="26%" class="splashScreenOverlayPicture"/>
+                <br>
+                    <div style="height:6.4vw"></div>
+                    <br>
+                    <span id="splashScreenOverlayText">
+                        RAHUL MALAVALLI
+                    </span>                    
+                </span>
+            </div>
+            
+            <!-- Space -->
+            <div style="height:3vw"></div>
+            
+            <content>
+                <h1>About Me</h1>
+                
+                <!-- Space -->
+                <div style="height:3vw"></div>
+                
+                <p style="font-size:2vw">My name is Rahul Malavalli, and I am an engineer pursuing Computer Science and Engineering at the University of California-Los Angleles.
+                <br><br>
+                I am passionate about using computer science in novel ways, and eager to continue exploring technology on not only the scholastic path, but also through personal endeavors, technical internships/jobs, research positions, and other opportunities.
+                <br><br>
+                To see some of my projects or to contact me, please click on the appropriate tab above!
+                </p>
+            </content>
+        
+            
+        </div>
+        
+    </body>
+</html>
