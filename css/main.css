@@ -58,14 +58,13 @@ h4 {
   max-width: 1024px;
 }
 
-.affix {
-  top: 0;
-  width: 100%;
-  z-index: 9999 !important;
+body {
+  background-color: rgb(229, 234, 238);
 }
 
-.affix + .container-fluid {
-  padding-top: 70px;
+.section {
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
 .title {
@@ -75,25 +74,20 @@ h4 {
 
 .aboutme {
   background-color: rgb(139, 161, 168);
-  padding: 0.7rem;
 }
 
 .education {
   background-color: rgb(149, 175, 183);
-  padding: 0.7rem;
 }
 
 .workexperience {
   background-color: rgb(159, 187, 195);
-  padding: 0.7rem;
 }
 
 .projects {
   background-color: rgb(197, 208, 212);
-  padding: 0.7rem;
 }
 
 .contactme {
   background-color: rgb(161, 176, 181);
-  padding: 0.7rem;
 }
