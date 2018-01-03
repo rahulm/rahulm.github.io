@@ -24,15 +24,9 @@ h1 {
   font-size: 1.4rem;
   padding: 0px;
   margin: 0px;
-  text-transform: uppercase;
-}
-
-h1 span {
-  display: inline-block;
-}
-
-h1 span:first-letter {
-  font-size:2rem;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  /* text-transform: uppercase; */
 }
 
 h2 {
@@ -42,7 +36,6 @@ h2 {
   padding: 0px;
   margin: 0px;
   text-transform: lowercase;
-  /* text-transform: uppercase; */
 }
 
 h3 {
@@ -76,35 +69,31 @@ h4 {
 }
 
 .title {
-  /* background-color: rgb(255, 186, 73); */
   background-color: rgb(229, 234, 238);
   padding: 1rem;
 }
 
 .aboutme {
-  background-color: rgb(136, 162, 170);
+  background-color: rgb(139, 161, 168);
   padding: 0.7rem;
 }
 
 .education {
-  background-color: rgb(185, 200, 200);
+  background-color: rgb(149, 175, 183);
   padding: 0.7rem;
 }
 
 .workexperience {
-  /* background-color: rgb(226, 133, 110); */
-  background-color: rgb(136, 162, 170);
+  background-color: rgb(159, 187, 195);
   padding: 0.7rem;
 }
 
 .projects {
-  /* background-color: rgb(143, 173, 136); */
-  background-color: rgb(185, 200, 200);
+  background-color: rgb(197, 208, 212);
   padding: 0.7rem;
 }
 
 .contactme {
-  /* background-color: rgb(238, 224, 203); */
-  background-color: rgb(229, 234, 238);
+  background-color: rgb(161, 176, 181);
   padding: 0.7rem;
 }
