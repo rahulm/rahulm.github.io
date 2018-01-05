@@ -67,27 +67,27 @@ body {
   margin: 0.5rem;
 }
 
-.title {
+#title {
   background-color: rgb(229, 234, 238);
   padding: 1rem;
 }
 
-.aboutme {
+#aboutme {
   background-color: rgb(114, 162, 175);
 }
 
-.education {
+#education {
   background-color: rgb(132, 183, 197);
 }
 
-.workexperience {
+#workexperience {
   background-color: rgb(175, 187, 191);
 }
 
-.projects {
+#projects {
   background-color: rgb(196, 209, 214);
 }
 
-.contactme {
+#contactme {
   background-color: rgb(229, 234, 238);
 }
