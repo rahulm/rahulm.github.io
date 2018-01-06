@@ -159,116 +159,8 @@
             </div>
           </div>
           
-          <div id="workexperiencediv">
+          <div id="workexperiencediv"></div>
           
-            <!-- first row of experience -->
-            <div class="row">
-            
-              <!-- template for experience box -->
-              <div class="col-sm-4 p-3">
-                
-                <!-- image -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <img src="resources/images/google_logo.png" alt="Google" width="80"> <!-- class="img-fluid" -->
-                  </div>
-                </div>
-                
-                <!-- location name -->
-                <div class="row pb-1">
-                  <div class="col-sm-12">
-                    <h3><b>Google</b></h3>
-                  </div>
-                </div>
-                
-                <!-- position -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <h3>Software Engineering Intern</h3>
-                  </div>
-                </div>
-                
-                <!-- time period -->
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h4>June 2017 - September 2017</h4>
-                  </div>
-                </div>
-              
-              </div>
-              
-              
-              <!-- SARP lab -->
-              <div class="col-sm-4 p-3">
-                
-                <!-- image -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <img src="resources/images/ucla_health.png" alt="UCLA Health" width="80"> <!-- class="img-fluid" -->
-                  </div>
-                </div>
-                
-                <!-- location name -->
-                <div class="row pb-1">
-                  <div class="col-sm-12">
-                    <h3><b>SARP Lab - UCLA Health</b></h3>
-                  </div>
-                </div>
-                
-                <!-- position -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <h3>Undergrad CS Researcher</h3>
-                  </div>
-                </div>
-                
-                <!-- time period -->
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h4>April 2016 - September 2016</h4>
-                  </div>
-                </div>
-              
-              </div>
-              
-              
-              <!-- PlayFull -->
-              <div class="col-sm-4 p-3">
-                
-                <!-- image -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <img src="resources/images/playfull.png" alt="PlayFull" width="80"> <!-- class="img-fluid" -->
-                  </div>
-                </div>
-                
-                <!-- location name -->
-                <div class="row pb-1">
-                  <div class="col-sm-12">
-                    <h3><b>PlayFull</b></h3>
-                  </div>
-                </div>
-                
-                <!-- position -->
-                <div class="row pb-2">
-                  <div class="col-sm-12">
-                    <h3>Lead Android Developer</h3>
-                  </div>
-                </div>
-                
-                <!-- time period -->
-                <div class="row">
-                  <div class="col-sm-12">
-                    <h4>October 2014 - September 2015</h4>
-                  </div>
-                </div>
-              
-              </div>
-              
-              
-            </div>
-          
-          </div>
         </div>
       </div>
       
@@ -353,6 +245,36 @@
     <div id="test">testingdiv</div>
     
   </body>
+  
+  <script type="text/template" id="infotemplate">
+    <div class="col-sm-4 p-3 text-center">
+    
+      <div class="row pb-2">
+        <div class="col-sm-12">
+          <img id="image" src="" alt="" width="80">
+        </div>
+      </div>
+      
+      <div class="row pb-1">
+        <div class="col-sm-12">
+          <h3><b id="firsttitle"></b></h3>
+        </div>
+      </div>
+      
+      <div class="row pb-2">
+        <div class="col-sm-12">
+          <h3 id="secondtitle"></h3>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="thirdtitle"></h4>
+        </div>
+      </div>
+    
+    </div>
+  </script>
   
   <!-- other custom scripts -->
   <script type="text/javascript" src="js/fill_elements.js"></script>
