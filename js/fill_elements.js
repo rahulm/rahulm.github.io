@@ -28,13 +28,42 @@ var experienceList = [
   }
 ];
 
+var testtemplatestr = `<div class="col-sm-4 p-3 text-center">\
+  
+      <div class="row pb-2">\
+        <div class="col-sm-12">\
+          <img id="image" src="" alt="" width="80">
+        </div>
+      </div>
+      
+      <div class="row pb-1">
+        <div class="col-sm-12">
+          <h3><b id="firsttitle"></b></h3>
+        </div>
+      </div>
+      
+      <div class="row pb-2">
+        <div class="col-sm-12">
+          <h3 id="secondtitle"></h3>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12">
+          <h4 id="thirdtitle"></h4>
+        </div>
+      </div>
+    
+    </div>`;
+
 function fillExperience() {
-  var workexptemplatestr = document.getElementById("infotemplate");
+  // var workexptemplatestr = document.getElementById("infotemplate");
   var workexpdiv = document.getElementById("workexperiencediv");
   var currRow = null;
   
   for (i = 0; i < experienceList.length; ++i) {
-    var tmp = document.createRange().createContextualFragment(workexptemplatestr.innerHTML);
+    // var tmp = document.createRange().createContextualFragment(workexptemplatestr.innerHTML);
+    var tmp = document.createRange().createContextualFragment(testtemplatestr);
     var exp = experienceList[i];
     tmp.getElementById("image").src = exp["image"]["src"];
     tmp.getElementById("image").alt = exp["image"]["alt"];
