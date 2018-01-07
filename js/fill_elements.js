@@ -67,12 +67,30 @@ var projectList = [
   },
   {
     "image" : {
-      "src" : "resources/images/hacktech_2016_logo.png",
+      "src" : "resources/images/hacktech_2016-600x600.png",
       "alt" : "Hacktech 2016"
       },
     "line1" : "PoliSense",
     "line2" : "Hacktech (Caltech Hackathon) 2016 Project",
     "duration" : "February 2016"
+  },
+  {
+    "image" : {
+      "src" : "resources/images/UCLADining_app_icon_high_res.png",
+      "alt" : "UCLA Dining App"
+      },
+    "line1" : "UCLA Dining App",
+    "line2" : "Android Application",
+    "duration" : "August 2015"
+  },
+  {
+    "image" : {
+      "src" : "resources/images/googlePlayIcon-Amaze.png",
+      "alt" : "amaze"
+      },
+    "line1" : "amaze",
+    "line2" : "Android Game",
+    "duration" : "July 2014 - August 2014"
   },
 ];
 
