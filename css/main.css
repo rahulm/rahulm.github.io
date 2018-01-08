@@ -58,8 +58,65 @@ h4 {
   max-width: 1024px;
 }
 
+html {
+  background-color: rgb(229, 234, 238);
+}
+
 body {
   background-color: rgb(229, 234, 238);
+}
+
+.fadeinanim {
+  animation:          fadein 2.5s;
+  -o-animation:       fadein 2.5s;
+  -ms-animation:      fadein 2.5s;
+  -moz-animation:     fadein 2.5s;
+  -webkit-animation:  fadein 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .section {
@@ -70,6 +127,12 @@ body {
 #title {
   background-color: rgb(229, 234, 238);
   padding: 1rem;
+  
+  animation:          fadein 1.5s;
+  -o-animation:       fadein 1.5s;
+  -ms-animation:      fadein 1.5s;
+  -moz-animation:     fadein 1.5s;
+  -webkit-animation:  fadein 1.5s;
 }
 
 #aboutme {
