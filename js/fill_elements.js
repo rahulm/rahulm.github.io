@@ -1,6 +1,24 @@
 var experienceList = [
   {
     "image" : {
+      "src" : "resources/images/flogo_RGB_HEX-1024.png",
+      "alt" : "Facebook"
+      },
+    "workplace" : "Facebook",
+    "position" : "Software Engineering Intern",
+    "duration" : "June 2018 - Present (Ends September 2018)"
+  },
+  {
+    "image" : {
+      "src" : "resources/images/builducla.png",
+      "alt" : "BuildUCLA Collections Lab"
+      },
+    "workplace" : "BuildUCLA Collections Lab",
+    "position" : "Student Researcher",
+    "duration" : "January 2018 - June 2018"
+  },
+  {
+    "image" : {
       "src" : "resources/images/google_logo.png",
       "alt" : "Google"
       },
