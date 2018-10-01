@@ -6,7 +6,7 @@ var experienceList = [
       },
     "workplace" : "Facebook",
     "position" : "Software Engineering Intern",
-    "duration" : "June 2018 - Present (Ends September 2018)"
+    "duration" : "June 2018 - September 2018"
   },
   {
     "image" : {
