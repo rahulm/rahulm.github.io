@@ -122,7 +122,7 @@ var projectList = [
 ];
 
 function fillExperience() {
-  var workexptemplatestr = document.getElementById("infotemplate");
+  var workexptemplatestr = document.getElementById("infotemplatescript");
   var workexpdiv = document.getElementById("workexperiencediv");
   var currRow = null;
   
@@ -153,7 +153,7 @@ function fillExperience() {
 }
 
 function fillProjects() {
-  var projectstemplatestr = document.getElementById("infotemplate");
+  var projectstemplatestr = document.getElementById("infotemplatescript");
   var projectsdiv = document.getElementById("projectsdiv");
   var currRow = null;
   
