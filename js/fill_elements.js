@@ -130,12 +130,12 @@ function fillTemplate(templateElementName, targetDivName, data) {
     var tmp = document.createRange().createContextualFragment(projectstemplatestr.innerHTML);
     var exp = data[i];
     
-    tmp.getElementById("image").src = exp["image"]["src"];
-    tmp.getElementById("image").alt = exp["image"]["alt"];
+    tmp.getElementById("infotemplatebox-image").src = exp["image"]["src"];
+    tmp.getElementById("infotemplatebox-image").alt = exp["image"]["alt"];
     
-    tmp.getElementById("line1").innerHTML = exp["line1"];
-    tmp.getElementById("line2").innerHTML = exp["line2"];
-    tmp.getElementById("line3").innerHTML = exp["line3"];
+    tmp.getElementById("infotemplatebox-line1").innerHTML = exp["line1"];
+    tmp.getElementById("infotemplatebox-line2").innerHTML = exp["line2"];
+    tmp.getElementById("infotemplatebox-line3").innerHTML = exp["line3"];
     
     if ((i % 3) == 0) {
       if (currRow != null) {
