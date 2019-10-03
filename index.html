@@ -215,6 +215,57 @@
       
       
     </div>
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="descriptionModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          
+          <div class="modal-body text-center p-4" id="descriptionModalBody">
+            <!-- image and close button -->
+            <div class="row pb-2">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <img id="descriptionModal-image" src="" alt="" height="128">
+              </div>
+              <div class="col-sm-3 text-right">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            
+            <!-- headers -->
+            <div class="row pb-1">
+              <div class="col-sm-12">
+                <h3><b id="descriptionModal-line1">Line 1</b></h3>
+              </div>
+            </div>
+            <div class="row pb-2">
+              <div class="col-sm-12">
+                <h3 id="descriptionModal-line2">Line 2</h3>
+              </div>
+            </div>
+            <div class="row pb-3">
+              <div class="col-sm-12">
+                <h4 id="descriptionModal-line3">Line 3</h4>
+              </div>
+            </div>
+            
+            
+            <!-- description -->
+            <div class="row">
+              <div id="descriptionModal-textarea" class="col-sm-12 text-justify">
+                Text Area
+              </div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
 
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -224,9 +275,8 @@
   </body>
   
   <script type="text/template" id="infotemplatescript">
-    <div id="infotemplatebox" class="col-sm-4 p-3 text-center">
-      <!-- <a href="#" id="infotemplatebox-link" class="fill-div"> -->
-    
+    <div id="infotemplatebox" class="col-sm-4 p-3 text-center" data-toggle="modal" data-target="#descriptionModal" data-infoType="" data-infoId="">
+      
       <div class="row pb-2">
         <div class="col-sm-12">
           <img id="infotemplatebox-image" src="" alt="" height="80">
@@ -251,9 +301,6 @@
         </div>
       </div>
       
-      
-      <!-- </a> -->
-    
     </div>
   </script>
   

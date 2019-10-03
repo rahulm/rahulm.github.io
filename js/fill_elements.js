@@ -6,7 +6,8 @@ var experienceList = [
       },
     "line1" : "Facebook",
     "line2" : "Software Engineering Intern",
-    "line3" : "June 2018 - September 2018"
+    "line3" : "June 2018 - September 2018",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -15,7 +16,8 @@ var experienceList = [
       },
     "line1" : "BuildUCLA Collections Lab",
     "line2" : "Student Researcher",
-    "line3" : "January 2018 - June 2018"
+    "line3" : "January 2018 - June 2018",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -24,7 +26,8 @@ var experienceList = [
       },
     "line1" : "Google",
     "line2" : "Software Engineering Intern",
-    "line3" : "June 2017 - September 2017"
+    "line3" : "June 2017 - September 2017",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -33,7 +36,8 @@ var experienceList = [
       },
     "line1" : "SARP Lab - UCLA Health",
     "line2" : "Undergrad CS Researcher",
-    "line3" : "April 2016 - September 2016"
+    "line3" : "April 2016 - September 2016",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -42,8 +46,9 @@ var experienceList = [
       },
     "line1" : "PlayFull",
     "line2" : "Lead Android Developer",
-    "line3" : "October 2014 - September 2015"
-  }
+    "line3" : "October 2014 - September 2015",
+    "textarea" : "",
+  },
 ];
 
 var projectList = [
@@ -54,7 +59,8 @@ var projectList = [
       },
     "line1" : "Analysis of VAEs for Reconstructive and Generative Tasks",
     "line2" : "ECE232AS Final Project",
-    "line3" : "March 2019"
+    "line3" : "March 2019",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -63,7 +69,8 @@ var projectList = [
       },
     "line1" : "FPGA Depth Perception",
     "line2" : "CS 152B Final Project",
-    "line3" : "October 2017 - December 2017"
+    "line3" : "October 2017 - December 2017",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -72,7 +79,8 @@ var projectList = [
       },
     "line1" : "Indoor Positioning through Machine Learning on WiFi Fingerprints",
     "line2" : "Research Paper - IPIN 2017",
-    "line3" : "February 2017 - September 2017"
+    "line3" : "February 2017 - September 2017",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -81,7 +89,8 @@ var projectList = [
       },
     "line1" : "Android Knock Unlock",
     "line2" : "EE3 Final Project",
-    "line3" : "April 2016 - June 2016"
+    "line3" : "April 2016 - June 2016",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -90,7 +99,8 @@ var projectList = [
       },
     "line1" : "PorFavor",
     "line2" : "LAHacks 2016 Project",
-    "line3" : "April 2016"
+    "line3" : "April 2016",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -99,7 +109,8 @@ var projectList = [
       },
     "line1" : "PoliSense",
     "line2" : "Hacktech (Caltech Hackathon) 2016 Project",
-    "line3" : "February 2016"
+    "line3" : "February 2016",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -108,7 +119,8 @@ var projectList = [
       },
     "line1" : "UCLA Dining App",
     "line2" : "Android Application",
-    "line3" : "August 2015"
+    "line3" : "August 2015",
+    "textarea" : "",
   },
   {
     "image" : {
@@ -117,18 +129,30 @@ var projectList = [
       },
     "line1" : "amaze",
     "line2" : "Android Game",
-    "line3" : "July 2014 - August 2014"
+    "line3" : "July 2014 - August 2014",
+    "textarea" : "",
   },
 ];
 
-function fillTemplate(templateElementName, targetDivName, data) {
+dataDict = {
+  "experience" : experienceList,
+  "projects" : projectList,
+}
+
+
+function fillTemplate(templateElementName, targetDivName, dataName) {
   var projectstemplatestr = document.getElementById(templateElementName);
   var targetdiv = document.getElementById(targetDivName);
+  var data = dataDict[dataName]
   var currRow = null;
   
   for (i = 0; i < data.length; ++i) {
     var tmp = document.createRange().createContextualFragment(projectstemplatestr.innerHTML);
+    var box = tmp.getElementById("infotemplatebox");
     var exp = data[i];
+    
+    box.dataset.infoType = dataName;
+    box.dataset.infoId = i;
     
     tmp.getElementById("infotemplatebox-image").src = exp["image"]["src"];
     tmp.getElementById("infotemplatebox-image").alt = exp["image"]["alt"];
@@ -150,7 +174,20 @@ function fillTemplate(templateElementName, targetDivName, data) {
   targetdiv.appendChild(currRow);
 }
 
-fillTemplate("infotemplatescript", "workexperiencediv", experienceList)
-fillTemplate("infotemplatescript", "projectsdiv", projectList)
+fillTemplate("infotemplatescript", "workexperiencediv", "experience");
+fillTemplate("infotemplatescript", "projectsdiv", "projects");
 
+$(document).on("show.bs.modal","#descriptionModal", function (event) {
+  var triggerBox = $(event.relatedTarget);
+  var d = dataDict[triggerBox.data("infoType")][triggerBox.data("infoId")];
+  
+  var modal = $(this);
+  modal.find("#descriptionModal-image").attr("src", d["image"]["src"]);
+  modal.find("#descriptionModal-image").attr("alt", d["image"]["alt"]);
+  
+  modal.find("#descriptionModal-line1").text(d["line1"]);
+  modal.find("#descriptionModal-line2").text(d["line2"]);
+  modal.find("#descriptionModal-line3").text(d["line3"]);
+  modal.find("#descriptionModal-textarea").text(d["textarea"]);
+})
 
