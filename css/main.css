@@ -130,6 +130,8 @@ a.email {
   margin: 0.5rem;
 }
 
+/* section background colors */
+
 #title {
   background-color: rgb(229, 234, 238);
   padding: 1rem;
@@ -160,4 +162,17 @@ a.email {
 #contactme {
   background-color: rgb(229, 234, 238);
 }
+
+
+
+/* infotemplate styling */
+
+#infotemplatebox {
+  transition: 0.5s;
+}
+
+#infotemplatebox:hover {
+  background-color: rgb(229, 234, 238);
+}
+
 
