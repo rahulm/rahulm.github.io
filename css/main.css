@@ -66,6 +66,12 @@ body {
   background-color: rgb(229, 234, 238);
 }
 
+/* making email link look more like normal text */
+a.email {
+  color: black;
+}
+
+
 .fadeinanim {
   animation:          fadein 2.5s;
   -o-animation:       fadein 2.5s;
@@ -154,3 +160,4 @@ body {
 #contactme {
   background-color: rgb(229, 234, 238);
 }
+

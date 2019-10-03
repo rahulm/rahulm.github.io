@@ -49,6 +49,15 @@ var experienceList = [
 var projectList = [
   {
     "image" : {
+      "src" : "resources/images/deep_learning.svg",
+      "alt" : "Deep Learning"
+      },
+    "line1" : "Analysis of VAEs for Reconstructive and Generative Tasks",
+    "line2" : "ECE232AS Final Project",
+    "duration" : "March 2019"
+  },
+  {
+    "image" : {
       "src" : "resources/images/stereo_camera_512x512.png",
       "alt" : "Stereo Camera"
       },
