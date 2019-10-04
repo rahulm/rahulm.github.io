@@ -77,7 +77,13 @@ $(document).on("show.bs.modal","#descriptionModal", function (event) {
     modal.find("#descriptionModal-links-box").css("display", "none");
     modal.find("#descriptionModal-links").text("");
   }
-  
-  
 });
 
+$(window).on("navigate", function (event, data) {
+  var direction = data.state.direction;
+  if (direction == 'back') {
+    if (($("#descriptionModal").data('bs.modal') || {})._isShown) {
+      $("#descriptionModal").modal("hide");
+    }
+  }
+});
