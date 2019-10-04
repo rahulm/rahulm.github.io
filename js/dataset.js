@@ -68,7 +68,7 @@ experience.`
 - Developed in-app features increasing Android installs from less than 100 to over 500.
 - Member of the PlayFull LA Hacks 2015 Sponsor Team, providing major catering for all hackers participating.`,
     "links" : [
-      "https://beplayfull.com"
+      "https://playfull.com"
     ]
   }
 ];
