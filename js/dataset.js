@@ -8,7 +8,7 @@ var experienceList = [
     "line2" : "Software Engineering Intern",
     "line3" : "June 2018 - September 2018",
     "textarea" : `- Backend development on storage/databases team for Messenger Infrastructure.
-- Developed internal tool forrecovery of content in disaster scenarios.`
+- Developed internal tool for recovery of content in disaster scenarios.`
   },
   {
     "image" : {
