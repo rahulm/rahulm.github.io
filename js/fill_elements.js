@@ -53,7 +53,31 @@ $(document).on("show.bs.modal","#descriptionModal", function (event) {
   // descr += "</ul>";
   // modal.find("#descriptionModal-textarea").html(descr);
   
-  var descr = d["textarea"].replace(/\n/g, "<br>");
-  modal.find("#descriptionModal-textarea").html(descr);
+  
+  if ("textarea" in d) {
+    var val = d["textarea"].replace(/\n/g, "<br>");
+    modal.find("#descriptionModal-textarea-box").css("display", "block");
+    modal.find("#descriptionModal-textarea").html(val);
+  } else {
+    modal.find("#descriptionModal-textarea-box").css("display", "none");
+    modal.find("#descriptionModal-textarea").text("");
+  }
+  
+  
+  if ("links" in d) {
+    var links = d["links"];
+    var vals = [];
+    for (i = 0; i < links.length; ++i) {
+      vals.push(`<a href="${links[i]}">${links[i]}</a>`);
+    }
+    var val = vals.join("<br>");
+    modal.find("#descriptionModal-links-box").css("display", "block");
+    modal.find("#descriptionModal-links").html(val);
+  } else {
+    modal.find("#descriptionModal-links-box").css("display", "none");
+    modal.find("#descriptionModal-links").text("");
+  }
+  
+  
 });
 

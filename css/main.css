@@ -183,4 +183,13 @@ a.email {
   background-color: rgb(229, 234, 238);
 }
 
+#descriptionModal-textarea {
+  line-height: 2;
+}
+
+#descriptionModal-links {
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
 
