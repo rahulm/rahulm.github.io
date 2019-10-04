@@ -47,6 +47,13 @@ $(document).on("show.bs.modal","#descriptionModal", function (event) {
   modal.find("#descriptionModal-line1").text(d["line1"]);
   modal.find("#descriptionModal-line2").text(d["line2"]);
   modal.find("#descriptionModal-line3").text(d["line3"]);
-  modal.find("#descriptionModal-textarea").text(d["textarea"]);
-})
+  
+  // var descr = "<ul>";
+  // descr += d["textarea"].replace(/\- /g, "<li>").replace(/\n/g, "</li>");
+  // descr += "</ul>";
+  // modal.find("#descriptionModal-textarea").html(descr);
+  
+  var descr = d["textarea"].replace(/\n/g, "<br>");
+  modal.find("#descriptionModal-textarea").html(descr);
+});
 
