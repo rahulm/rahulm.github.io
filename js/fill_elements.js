@@ -37,6 +37,9 @@ fillTemplate("infotemplatescript", "workexperiencediv", "experience");
 fillTemplate("infotemplatescript", "projectsdiv", "projects");
 
 $(document).on("show.bs.modal","#descriptionModal", function (event) {
+  history.pushState(null, "", "");
+  
+  
   var triggerBox = $(event.relatedTarget);
   var d = dataDict[triggerBox.data("infoType")][triggerBox.data("infoId")];
   
@@ -79,11 +82,8 @@ $(document).on("show.bs.modal","#descriptionModal", function (event) {
   }
 });
 
-$(window).on("navigate", function (event, data) {
-  var direction = data.state.direction;
-  if (direction == 'back') {
-    if (($("#descriptionModal").data('bs.modal') || {})._isShown) {
-      $("#descriptionModal").modal("hide");
-    }
+$(window).on('popstate', function(event) {
+  if (($("#descriptionModal").data('bs.modal') || {})._isShown) {
+    $("#descriptionModal").modal("hide");
   }
 });
