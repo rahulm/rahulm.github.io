@@ -36,8 +36,19 @@ function fillTemplate(templateElementName, targetDivName, dataName) {
 fillTemplate("infotemplatescript", "workexperiencediv", "experience");
 fillTemplate("infotemplatescript", "projectsdiv", "projects");
 
+// var modalState = {"modalShown" : false};
+// history.pushState(modalState, "", "");
+var modalStatePushed = false;
+
 $(document).on("show.bs.modal","#descriptionModal", function (event) {
-  history.pushState(null, "", "");
+  // start modal back button
+  if (modalStatePushed == true) {
+    history.replaceState(null, "", "");
+  } else {
+    history.pushState(null, "", "");
+    modalStatePushed = true;
+  }
+  // end modal back button
   
   
   var triggerBox = $(event.relatedTarget);
@@ -82,8 +93,28 @@ $(document).on("show.bs.modal","#descriptionModal", function (event) {
   }
 });
 
+$('div.modal').on('show', function() {
+	var modal = this;
+	var hash = modal.id;
+	window.location.hash = hash;
+	window.onhashchange = function() {
+		if (!location.hash){
+			$(modal).modal('hide');
+		}
+	}
+});
+
 $(window).on('popstate', function(event) {
   if (($("#descriptionModal").data('bs.modal') || {})._isShown) {
+    modalStatePushed = false;
     $("#descriptionModal").modal("hide");
   }
+  // else if (modalStatePushed == true) {
+    // history.back();
+  // }
 });
+
+// $("#descriptionModal").on("hidden.bs.modal", function () {
+  // alert("Hidden");
+// });
+
