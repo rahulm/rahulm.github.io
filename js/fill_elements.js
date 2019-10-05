@@ -108,13 +108,8 @@ $(window).on('popstate', function(event) {
   if (($("#descriptionModal").data('bs.modal') || {})._isShown) {
     modalStatePushed = false;
     $("#descriptionModal").modal("hide");
+  } else if (modalStatePushed == true) {
+    history.back();
   }
-  // else if (modalStatePushed == true) {
-    // history.back();
-  // }
 });
-
-// $("#descriptionModal").on("hidden.bs.modal", function () {
-  // alert("Hidden");
-// });
 
