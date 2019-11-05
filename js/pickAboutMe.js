@@ -1,8 +1,11 @@
 // pickAboutMe.js
 
 ABOUT_ME_LINES = [
-  "I'm the sole San Diegan sans surfing skills.",
-  "I'm Rahul."
+  "I'm Rahul, the restless.",
+  "I'm Rahul, the rambunctious.",
+  "The sole San Diegan sans surfing skills.",
+  "A determined disciple of the digital domain.",
+  "A connoisseur of chips, both computed and consumed."
 ];
 
 
