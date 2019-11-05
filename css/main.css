@@ -152,11 +152,13 @@ a.email {
 }
 
 #workexperience {
-  background-color: rgb(175, 187, 191);
+  /* background-color: rgb(175, 187, 191); */
+  background-color: rgb(149, 204, 219);
 }
 
 #projects {
-  background-color: rgb(196, 209, 214);
+  /* background-color: rgb(196, 209, 214); */
+  background-color: rgb(177, 212, 222);
 }
 
 #contactme {
@@ -169,7 +171,7 @@ a.email {
 
 #infotemplatebox {
   cursor: pointer;
-  background-color: rgba(1, 1, 1, 0.07);
+  background-color: rgba(1, 1, 1, 0.05);
 }
 
 #infotemplatebox:hover {
