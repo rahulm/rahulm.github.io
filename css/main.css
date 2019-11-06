@@ -197,3 +197,17 @@ a.email {
 }
 
 
+/* about me fading */
+#aboutMeLine {
+  opacity: 1;
+  
+  transition: opacity 0.5s;
+  OTransition: opacity 0.5s;
+  MozTransition: opacity 0.5s;
+  WebkitTransition: opacity 0.5s;
+}
+#aboutMeLine.fade {
+  opacity: 0;
+}
+
+

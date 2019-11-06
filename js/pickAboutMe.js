@@ -13,8 +13,25 @@ function pickAboutMe(lines, targetId) {
   var numLines = lines.length;
   if (numLines > 0) {
     var sel = Math.floor((Math.random() * numLines));
-    document.getElementById(targetId).innerHTML = lines[sel];
+    var item = document.getElementById(targetId);
+    
+    transitionEndCallback = function(e) {
+      item.removeEventListener("transitionend", transitionEndCallback);
+      item.innerHTML = lines[sel];
+      item.classList.toggle("fade");
+    }
+    
+    item.addEventListener("transitionend", transitionEndCallback);
+    item.classList.toggle("fade");
   }
 }
 
-pickAboutMe(ABOUT_ME_LINES, "aboutMeLine");
+setInterval(
+  function() {
+    pickAboutMe(ABOUT_ME_LINES, "aboutMeLine");
+  },
+  
+  // interval in milliseconds
+  30 * 1000
+);
+
