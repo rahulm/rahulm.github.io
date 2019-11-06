@@ -5,7 +5,10 @@ ABOUT_ME_LINES = [
   "I'm Rahul, the rambunctious.",
   "The sole San Diegan sans surfing skills.",
   "A determined disciple of the digital domain.",
-  "A connoisseur of chips, both computed and consumed."
+  "A connoisseur of chips, both computed and consumed.",
+  "The name is Malavalli. Rahul Malavalli.",
+  "An aspiring artist of ambiguous ability.",
+  "An eager enthusiast of electronics."
 ];
 
 
