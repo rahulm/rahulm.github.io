@@ -76,6 +76,24 @@ experience.`
 var projectList = [
   {
     "image" : {
+      "src" : "resources/images/style_transfer_circle.png",
+      "alt" : "Style Transfer Animation Example"
+      },
+    "line1" : "Style Transfer",
+    "line2" : "TensorFlow 2.0",
+    "line3" : "November 2019",
+    "textarea" :
+    `- Basic neural style transfer implementation in Python using TensorFlow 2.0 and Keras.
+    - Applies the style of a style image to a chosen content image by continuing backpropagation to the neural network input (synthesized image).
+    - Optimizes a custom loss function from Gatys et al, along with a total variation loss to decrease local noise.
+    - Command line support for vgg16 and vgg19 networks, and loss weight configuration.
+    - Inspiration taken from <i>A Neural Algorithm of Style</i> by Gatys et al.`,
+    "links" : [
+      "https://github.com/rahulm11/style-transfer"
+    ]
+  },
+  {
+    "image" : {
       "src" : "resources/images/deep_learning.svg",
       "alt" : "Deep Learning"
       },
