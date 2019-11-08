@@ -81,7 +81,7 @@ var projectList = [
       },
     "line1" : "Style Transfer",
     "line2" : "TensorFlow 2.0",
-    "line3" : "November 2019",
+    "line3" : "October 2019",
     "textarea" :
     `- Basic neural style transfer implementation in Python using TensorFlow 2.0 and Keras.
     - Applies the style of a style image to a chosen content image by continuing backpropagation to the neural network input (synthesized image).
