@@ -1,6 +1,19 @@
 var experienceList = [
   {
     "image" : {
+      "src" : "resources/images/instabase_icon.svg",
+      "alt" : "Instabase"
+      },
+    "line1" : "Instabase",
+    "line2" : "Software Engineering Intern",
+    "line3" : "January 2020 - March 2020",
+    "textarea" : `Developed and deployed multiple features to the Instabase platform for customer use.`,
+    "links" : [
+      "https://about.instabase.com/"
+    ]
+  },
+  {
+    "image" : {
       "src" : "resources/images/flogo_RGB_HEX-1024.png",
       "alt" : "Facebook"
       },
