@@ -102,7 +102,7 @@ var projectList = [
     - Command line support for vgg16 and vgg19 networks, and loss weight configuration.
     - Inspiration taken from <i>A Neural Algorithm of Style</i> by Gatys et al.`,
     "links" : [
-      "https://github.com/rahulm11/style-transfer"
+      "https://github.com/rahulm/style-transfer"
     ]
   },
   {
@@ -115,7 +115,7 @@ var projectList = [
     "line3" : "March 2019",
     "textarea" : `- Development (in PyTorch) and comparison of Autoencoders (AEs) and Variational Autoencoders (VAEs) as generative models on the MNIST and Eigenfaces datasets.`,
     "links" : [
-      "https://github.com/rahulm11/ee239as-project"
+      "https://github.com/rahulm/ee239as-project"
     ]
   },
   {
@@ -135,7 +135,7 @@ Credit also goes to my two partners:
 - Jeff Au-Yeung
 - Naing Min`,
     "links" : [
-      "https://github.com/rahulm11/depth-perception-fpga"
+      "https://github.com/rahulm/depth-perception-fpga"
     ]
   },
   {
