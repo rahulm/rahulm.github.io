@@ -18,57 +18,78 @@
   box-sizing: border-box;
 }
 
+:root {
+  --custom-text-color: rgb(209, 205, 199);
+
+  /* --custom-body-background-color: rgb(229, 234, 238); */
+  --custom-body-background-color: rgb(36, 39, 41);
+
+  /* --custom-bg-color-about-me: rgb(114, 162, 175);
+  --custom-bg-color-education: rgb(132, 183, 197);
+  --custom-bg-color-workexperience: rgb(149, 204, 219);
+  --custom-bg-color-projects: rgb(177, 212, 222); */
+
+  --custom-bg-color-infotemplate: rgba(1, 1, 1, 0.05);
+  --custom-bg-color-infotemplate-hover: rgba(1, 1, 1, 0.5);
+  /* --custom-bg-color-infotemplate-hover: rgb(229, 234, 238); */
+  
+  --custom-bg-color-about-me: rgb(66, 106, 117);
+  --custom-bg-color-education: rgb(51, 96, 108);
+  --custom-bg-color-workexperience: rgb(35, 87, 102);
+  --custom-bg-color-projects: rgb(35, 72, 83);
+
+  /* --custom-bg-color-description-modal: rgb(229, 234, 238); */
+  --custom-modal-bg-color: rgb(36, 39, 41);
+  --custom-modal-border-color: rgba(140, 130, 115, 0.2);
+  --custom-modal-header-separater-color: rgb(56, 61, 63);
+  --custom-hr-color: rgb(62, 68, 70);
+  --custom-close-button-shadow: rgb(24, 26, 27) 0px 1px 0px;
+}
+
+* {
+  color: var(--custom-text-color);
+}
+
+html, #title {
+  background-color: var(--custom-body-background-color);
+}
+
+h1, h2, h3, h4 {
+  padding: 0px;
+  margin: 0px;
+}
+
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   font-size: 1.4rem;
-  padding: 0px;
-  margin: 0px;
   font-variant: small-caps;
   text-transform: capitalize;
   /* text-transform: uppercase; */
 }
-
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 1.7rem;
-  padding: 0px;
-  margin: 0px;
   text-transform: lowercase;
 }
-
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 1rem;
-  padding: 0px;
-  margin: 0px;
 }
-
 h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 0.8rem;
-  padding: 0px;
-  margin: 0px;
 }
-
 .inner {
   max-width: 1024px;
 }
 
-html {
-  background-color: rgb(229, 234, 238);
-}
-
-body {
-  background-color: rgb(229, 234, 238);
-}
-
 /* making email link look more like normal text */
 a.email {
-  color: black;
+  color: var(--custom-text-color);
 }
 
 
@@ -131,9 +152,7 @@ a.email {
 }
 
 /* section background colors */
-
 #title {
-  background-color: rgb(229, 234, 238);
   padding: 1rem;
   
   animation:          fadein 1.5s;
@@ -142,58 +161,55 @@ a.email {
   -moz-animation:     fadein 1.5s;
   -webkit-animation:  fadein 1.5s;
 }
-
 #aboutme {
-  background-color: rgb(114, 162, 175);
+  background-color: var(--custom-bg-color-about-me);
 }
-
 #education {
-  background-color: rgb(132, 183, 197);
+  background-color: var(--custom-bg-color-education);
 }
-
 #workexperience {
-  /* background-color: rgb(175, 187, 191); */
-  background-color: rgb(149, 204, 219);
+  background-color: var(--custom-bg-color-workexperience);
 }
-
 #projects {
-  /* background-color: rgb(196, 209, 214); */
-  background-color: rgb(177, 212, 222);
+  background-color: var(--custom-bg-color-projects);
 }
-
-#contactme {
-  background-color: rgb(229, 234, 238);
-}
-
 
 
 /* infotemplate styling */
-
 #infotemplatebox {
   cursor: pointer;
-  background-color: rgba(1, 1, 1, 0.05);
+  background-color: var(--custom-bg-color-infotemplate);
 }
-
 #infotemplatebox:hover {
-  background-color: rgb(229, 234, 238);
+  background-color: var(--custom-bg-color-infotemplate-hover);
   box-shadow: none;
 }
 
 
 
 /* descriptionModal styling */
-
 #descriptionModalBodyContent {
-  background-color: rgb(229, 234, 238);
+  background-color: var(--custom-modal-bg-color);
 }
-
 #descriptionModal-textarea {
   line-height: 1.7;
 }
-
 #descriptionModal-links {
   word-wrap: break-word;
   line-height: 1.5;
+}
+.modal-content {
+  border-color: var(--custom-modal-border-color);
+}
+.modal-header {
+  border-bottom-color: var(--custom-modal-header-separater-color);
+}
+hr {
+  border-top-color: var(--custom-hr-color);
+}
+.close {
+  /* Not needed for light mode */
+  text-shadow: var(--custom-close-button-shadow);
 }
 
 
@@ -211,3 +227,37 @@ a.email {
 }
 
 
+/* Darken scrollbar */
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: #555b00 !important;
+  color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+  background-color: #202324;
+  color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+  background-color: #181a1b;
+}
+* {
+  scrollbar-color: #202324 #454a4d;
+}
+::selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
+}
+::-moz-selection {
+  background-color: #004daa !important;
+  color: #e8e6e3 !important;
+}
