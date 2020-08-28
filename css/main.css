@@ -198,6 +198,9 @@ a.email {
   word-wrap: break-word;
   line-height: 1.5;
 }
+#descriptionModal-image {
+  margin: 1em;
+}
 .modal-content {
   border-color: var(--custom-modal-border-color);
 }
