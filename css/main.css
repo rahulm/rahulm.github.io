@@ -30,13 +30,18 @@
   --custom-bg-color-projects: rgb(177, 212, 222); */
 
   --custom-bg-color-infotemplate: rgba(1, 1, 1, 0.05);
-  --custom-bg-color-infotemplate-hover: rgba(1, 1, 1, 0.5);
+  --custom-bg-color-infotemplate-hover: rgba(1, 1, 1, 0.35);
+  /* --custom-bg-color-infotemplate-hover: rgba(1, 1, 1, 0.5); */
   /* --custom-bg-color-infotemplate-hover: rgb(229, 234, 238); */
   
-  --custom-bg-color-about-me: rgb(66, 106, 117);
+  /* --custom-bg-color-about-me: rgb(66, 106, 117);
   --custom-bg-color-education: rgb(51, 96, 108);
   --custom-bg-color-workexperience: rgb(35, 87, 102);
-  --custom-bg-color-projects: rgb(35, 72, 83);
+  --custom-bg-color-projects: rgb(35, 72, 83); */
+  --custom-bg-color-about-me: hsl(193, 39%, 44%);
+  --custom-bg-color-education: hsl(193, 39%, 42%);
+  --custom-bg-color-workexperience: hsl(193, 39%, 40%);
+  --custom-bg-color-projects: hsl(193, 39%, 38%);
 
   /* --custom-bg-color-description-modal: rgb(229, 234, 238); */
   --custom-modal-bg-color: rgb(36, 39, 41);
