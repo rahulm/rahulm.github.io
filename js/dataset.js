@@ -1,6 +1,26 @@
 var experienceList = [
     {
         "image": {
+            "src": "resources/images/yt_icon_rgb.png",
+            "alt": "Instabase"
+        },
+        "line1": "YouTube",
+        "line2": "Software Engineer",
+        "line3": "June 2021 - Present",
+        "textarea": ``
+    },
+    {
+        "image": {
+            "src": "resources/images/google_logo.png",
+            "alt": "Google"
+        },
+        "line1": "Google",
+        "line2": "Software Engineering Intern",
+        "line3": "June 2020 - September 2020",
+        "textarea": `Google Assistant (Tappable Assistant).`
+    },
+    {
+        "image": {
             "src": "resources/images/instabase_icon.svg",
             "alt": "Instabase"
         },
