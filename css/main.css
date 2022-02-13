@@ -21,8 +21,9 @@
 :root {
   --custom-text-color: rgb(209, 205, 199);
 
-  /* --custom-body-background-color: rgb(229, 234, 238); */
-  --custom-body-background-color: rgb(36, 39, 41);
+  /* --custom-body-background-color: rgb(229, 234, 238); */ /* off-white */
+  /* --custom-body-background-color: rgb(36, 39, 41); */ /* off-black/dark grey */
+  --custom-body-background-color: hsl(204, 6%, 22%);
 
   /* --custom-bg-color-about-me: rgb(114, 162, 175);
   --custom-bg-color-education: rgb(132, 183, 197);
@@ -168,6 +169,7 @@ a.email {
 }
 #aboutme {
   background-color: var(--custom-bg-color-about-me);
+  /* background-image: linear-gradient(var(--custom-bg-color-about-me), hsl(193, 39%, 10%)); */
 }
 #education {
   background-color: var(--custom-bg-color-education);
