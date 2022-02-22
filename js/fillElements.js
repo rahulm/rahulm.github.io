@@ -87,9 +87,9 @@ $(document).on("show.bs.modal", "#descriptionModal", function (event) {
         var links = d["links"];
         var vals = [];
         for (i = 0; i < links.length; ++i) {
-            vals.push(`<a href="${links[i]}">${links[i]}</a>`);
+            vals.push(`<li><a href="${links[i]}">${links[i]}</a></li>`);
         }
-        var val = vals.join("<br>");
+        var val = "<ul>" + vals.join("") + "</ul>";
         modal.find("#descriptionModal-links-box").css("display", "block");
         modal.find("#descriptionModal-links").html(val);
     } else {

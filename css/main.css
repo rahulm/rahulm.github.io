@@ -217,8 +217,11 @@ a.email {
 }
 #descriptionModal-links {
   word-wrap: break-word;
-  line-height: 1.5;
+  line-height: 1.0;
   font-weight: 100;
+}
+#descriptionModal-links li {
+  padding: 0.3rem;
 }
 #descriptionModal-image {
   margin: 1em;
