@@ -62,12 +62,6 @@ $(document).on("show.bs.modal", "#descriptionModal", function (event) {
     modal.find("#descriptionModal-line2").text(d["line2"]);
     modal.find("#descriptionModal-line3").text(d["line3"]);
 
-    // var descr = "<ul>";
-    // descr += d["textarea"].replace(/\- /g, "<li>").replace(/\n/g, "</li>");
-    // descr += "</ul>";
-    // modal.find("#descriptionModal-textarea").html(descr);
-
-
     if ("textarea" in d) {
         var val = d["textarea"].replace(/\n/g, "<br>");
         modal.find("#descriptionModal-textarea-box").css("display", "block");
@@ -77,6 +71,17 @@ $(document).on("show.bs.modal", "#descriptionModal", function (event) {
         modal.find("#descriptionModal-textarea").text("");
     }
 
+    if ("bulletpoints" in d) {
+        var val = "<ul>";
+        val += Array.from(d["bulletpoints"], x => `<li>${x}</li>`).join('');
+        val += "</ul>";
+
+        modal.find("#descriptionModal-bulletpoints-box").css("display", "block");
+        modal.find("#descriptionModal-bulletpoints").html(val);
+    } else {
+        modal.find("#descriptionModal-bulletpoints-box").css("display", "none");
+        modal.find("#descriptionModal-bulletpoints").text("");
+    }
 
     if ("links" in d) {
         var links = d["links"];

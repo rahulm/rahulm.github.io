@@ -60,6 +60,12 @@ html, #title {
   background-color: var(--custom-body-background-color);
 }
 
+/* List styling. */
+ul {
+  /* padding: revert; */
+  list-style-type: none;
+}
+
 h1, h2, h3, h4 {
   padding: 0px;
   margin: 0px;
@@ -199,7 +205,13 @@ a.email {
   background-color: var(--custom-modal-bg-color);
 }
 #descriptionModal-textarea {
-  line-height: 1.7;
+  line-height: 1.25;
+}
+#descriptionModal-bulletpoints {
+  line-height: 1.25;
+}
+#descriptionModal-bulletpoints li {
+  padding: 0.4rem;
 }
 #descriptionModal-links {
   word-wrap: break-word;
