@@ -206,9 +206,11 @@ a.email {
 }
 #descriptionModal-textarea {
   line-height: 1.25;
+  font-weight: 100;
 }
 #descriptionModal-bulletpoints {
   line-height: 1.25;
+  font-weight: 100;
 }
 #descriptionModal-bulletpoints li {
   padding: 0.4rem;
@@ -216,6 +218,7 @@ a.email {
 #descriptionModal-links {
   word-wrap: break-word;
   line-height: 1.5;
+  font-weight: 100;
 }
 #descriptionModal-image {
   margin: 1em;
