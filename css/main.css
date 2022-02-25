@@ -204,13 +204,18 @@ a.email {
 #descriptionModalBodyContent {
   background-color: var(--custom-modal-bg-color);
 }
+#descriptionModal-detailsArea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+}
 #descriptionModal-textarea {
   line-height: 1.25;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 #descriptionModal-bulletpoints {
   line-height: 1.25;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 #descriptionModal-bulletpoints li {
   padding: 0.4rem;
@@ -218,7 +223,7 @@ a.email {
 #descriptionModal-links {
   word-wrap: break-word;
   line-height: 1.0;
-  font-weight: 100;
+  /* font-weight: 100; */
 }
 #descriptionModal-links li {
   padding: 0.3rem;
